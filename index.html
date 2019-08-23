@@ -34,7 +34,7 @@
 					<img src="images/back1.jpg" alt="" />
 					<div class="inner">
 						<header>
-							<p>Personal Website to share Data Driven Insights <a href="https://templated.co"> by Tomás Gaviño</a></p>
+							<p>Personal Website to share Data Driven Insights <a href=""> by Tomás Gaviño</a></p>
 							<h2><b>Data Intelligence</b> for All ManKind</h2>
 						</header>
 					</div>
@@ -84,17 +84,16 @@
 
 						<div>
 							<div class="box">
-								<div class="image fit">
-									<img src="images/SatJoinDist.png" alt="" />
-								</div>
 								<div class="content">
 									<header class="align-center">
-										<p>Medical Drugs Pricing Analysis by TG</p>
-										<h2>Which retailer has the lowest drug prices?</h2>
+										<p>Overall vs Own clinic Satisfaction</p>
+										<h2>Does the satisfaction of the general services is related to the local clinic service?</h2>
 									</header>
-									<p>In this section I unveil if a Mexican medical drugs retailer has consistent lower prices than others.
-									Thanks to the Profeco data of the drugs prices 
-									I could analyze several medicines prices to understand if a retailer is giving higher prices for the same medicine than others </p>
+									<div class="image fit">
+										<img src="images/SatJoinDistOwnvsOverall18.png" alt=""/>
+									</div>
+									<p>This chart represent the correlation between the satisfaction level with the local clinic and the overall IMSS service. 
+									   We can see that the satisfaction level with the local service and the overall service perception is positive correlated. </p>
 									<footer class="align-center">
 										<a href="generic.html" class="button alt">Learn More</a>
 									</footer>
@@ -104,16 +103,23 @@
 
 						<div>
 							<div class="box">
-								<div class="image fit">
-									<img src="images/SatisfactionSimulationsbyYear.png" alt="" />
-								</div>
+								
 								<div class="content">
 									<header class="align-center">
 										<p>IMSS satisfaction analysis by Tomas Gaviño</p>
 										<h2>Has the IMSS Satisfaction Improved?</h2>
 									</header>
+
+									<div class="image fit">
+										<img src="images/AllIMSSatisfactionSamplingbyYear.png" alt="" />
+									</div>
 									<p> Every quarter the Mexican Healthcare Institute (IMSS) performs a satisfaction survey among their beneficiaries. 
-										In this analysis I reveal if the IMSS has improved its satisfaction and the main satisfaction variables from the surveys.</p>
+										In this analysis I reveal if the IMSS has improved its satisfaction and the main satisfaction variables from the surveys.
+										We can see in the chart that the average satisfaction is higher but to be sure
+										<strong>we need to perform a T´Students test for identical means</strong>. The test was performed with python and the result is 
+										that the <strong> p-value is lower than .01 which means that we are sure that the satisfaction level for the 2018 was higher than for the 2017</strong>
+									</p>
+
 									<footer class="align-center">
 										<a href="IMSSAnalysis.html" class="button alt">Learn More</a>
 									</footer>
@@ -126,17 +132,17 @@
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style3">
+			<!-- <section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
 						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
 						<h2>Morbi maximus justo</h2>
 					</header>
 				</div>
-			</section>
+			</section> -->
 
 		<!-- Three -->
-			<section id="three" class="wrapper style2">
+			<!-- <section id="three" class="wrapper style2">
 				<div class="inner">
 					<header class="align-center">
 						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
@@ -165,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 
 		<!-- Footer -->
@@ -179,7 +185,7 @@
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; Untitled. All rights reserved.
+					&copy; Tomás Gaviño. All rights reserved.
 				</div>
 			</footer>
 
